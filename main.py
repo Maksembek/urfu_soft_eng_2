@@ -67,15 +67,18 @@ def download_file(url, download_to: Path, expected_size=None):
 
 
 def main():
-    st.header("Real Time Speech-to-Text")
-    st.markdown(
+    st.sidebar.image("UrFULogo_Russian.jpg")
+    st.sidebar.title("""Группа номер 7""")
+    st.sidebar.info("""Петросян Александр (modernpacifist)""")
+    st.sidebar.info("""Швец Сергей (recycletechno)""")
+    st.sidebar.info("""Семён Максимов (Maksembek)""")
+
+    st.title("""Преобразование речи в текст в реальном времени""")
+    st.write(
         """
-This demo app is using [DeepSpeech](https://github.com/mozilla/DeepSpeech),
-an open speech-to-text engine.
-A pre-trained model released with
-[v0.9.3](https://github.com/mozilla/DeepSpeech/releases/tag/v0.9.3),
-trained on American English is being served.
-"""
+        Данное приложение первый этап к созданию проектного режима.
+        Наша цель исследовать работу аудио-транслятора.
+        """
     )
 
     # https://github.com/mozilla/DeepSpeech/releases/tag/v0.9.3
@@ -92,7 +95,9 @@ trained on American English is being served.
     beam = 100
 
     sound_only_page = "Sound only (sendonly)"
-    app_mode = st.selectbox("Choose the app mode", [sound_only_page])
+    # app_mode = st.selectbox("Choose the app mode", [sound_only_page])
+
+    app_mode = sound_only_page
 
     if app_mode == sound_only_page:
         app_sst(
