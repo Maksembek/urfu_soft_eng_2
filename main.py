@@ -70,9 +70,9 @@ def download_file(url, download_to: Path, expected_size=None):
 
 def main():
     st.sidebar.image("UrFULogo_Russian.jpg")
-    st.sidebar.title("""������ ����� 7""")
-    st.sidebar.info("""�������� ��������� (modernpacifist)""")
-    st.sidebar.info("""���� ������ (recycletechno)""")
+    st.sidebar.title("""Рабочая группа 7""")
+    st.sidebar.info("""Александр Петросян (modernpacifist)""")
+    st.sidebar.info("""Швец Сергей (recycletechno)""")
     st.sidebar.info("""���� �������� (Maksembek)""")
 
     st.title("""�������������� ���� � ����� � �������� �������""")
