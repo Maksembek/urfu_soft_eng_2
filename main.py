@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import logging
 import logging.handlers
 import queue
@@ -75,13 +74,19 @@ def main():
     st.sidebar.info("""Швец Сергей (recycletechno)""")
     st.sidebar.info("""Семён Максимов (Maksembek)""")
 
-    st.title("""�������������� ���� � ����� � �������� �������""")
+    st.title("""Преобразование речи в текст в реальном времени""")
     st.write(
         """
-        ������ ���������� ������ ���� � �������� ���������� ������.
-        ���� ���� ����������� ������ �����-�����������.
+        Данное приложение первый этап к созданию проектного режима.
+        Наша цель исследовать работу аудио-транслятора.
         """
     )
+    st.write(
+        """
+        После нажатия на "Start", может пройти некоторое время, чтобы система подгрузила модули.
+        """
+    )
+
 
     # https://github.com/mozilla/DeepSpeech/releases/tag/v0.9.3
     MODEL_URL = "https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm"  # noqa
