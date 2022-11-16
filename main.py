@@ -73,7 +73,7 @@ def main():
     st.sidebar.title("""Рабочая группа 7""")
     st.sidebar.info("""Александр Петросян (modernpacifist)""")
     st.sidebar.info("""Швец Сергей (recycletechno)""")
-    st.sidebar.info("""���� �������� (Maksembek)""")
+    st.sidebar.info("""Семён Максимов (Maksembek)""")
 
     st.title("""�������������� ���� � ����� � �������� �������""")
     st.write(
